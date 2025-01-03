@@ -1,0 +1,87 @@
+/* style.css */
+body {
+    
+    background: rgba(0, 0, 0, 0.7) url('call.jpg') center fixed;
+    background-size: cover;
+    
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.calculator {
+    background: #150101f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.display {
+    background: #f5f2f2;
+    color: #131212;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+.operator {
+    background: #ffc107;
+    color: white;
+}
+
+.operator:hover {
+    background: #ff9800;
+}
+
+.equal {
+    background: #28a745;
+    color: white;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background: #218838;
+}
+.head h1 {
+    position: absolute; 
+    top: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin: 0; 
+    text-align: center;
+    padding: 10px;
+}
+.head h1 .logo {
+    width: 50px; /* Adjust to your desired size */
+    height: 40px;
+    object-fit: contain; /* Ensures the image fits well */
+}
